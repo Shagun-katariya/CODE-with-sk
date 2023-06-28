@@ -6,5 +6,5 @@ install packages
 for background svg:https://www.svgbackgrounds.com/
 for icon css:https://fontawesome.com/icons/categories/design
 bootstrap is the leader: bootstrap 5
-deployed link : https://codewithsk-01.onrender.com/
+deployed link : https://codewithsk-02.onrender.com/
 mdn
