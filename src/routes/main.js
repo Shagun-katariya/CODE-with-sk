@@ -1,7 +1,6 @@
 const express = require('express');
 const routes = express.Router()
 const Detail = require('../models/Details')
-const Slider = require('../models/Slider')
 const service = require('../models/service')
 const Contact = require('../models/Contact')
 const Tutorial = require('../models/Tutorial')
