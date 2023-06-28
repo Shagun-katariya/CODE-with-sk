@@ -1,0 +1,47 @@
+<nav class="navbar sticky-top border-bottom navbar-expand-lg py-3 navbar-white bg-warning">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="{{data.brandIconUrl}}" alt="" width="40" height="40" style="border-radius: 50%;"d-inline-block align-text-top">
+        {{data.brandName}}
+        </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+        {{#each data.links}}
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{this.url}}">{{this.label}}</a>
+        </li>
+
+        {{/each}}
+         <li class="nav-item">
+          <a id="loginBtn" href="/Login" class="btn btn-link" style="display: block;">Login</a>
+        </li>
+        <li class="nav-item">
+          <a id="signupBtn" href="/Signup" class="btn btn-link" style="display: block;">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a id="logoutBtn" href="/" class="btn btn-link" style="display: none;">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <script>
+  // Function to hide the login and signup buttons and show the logout button
+  function showLogoutButton() {
+    var loginButton = document.getElementById("loginBtn");
+    var signupButton = document.getElementById("signupBtn");
+    var logoutButton = document.getElementById("logoutBtn");
+    
+    loginButton.style.display = "none";
+    signupButton.style.display = "none";
+    logoutButton.style.display = "block";
+  }
+</script>
+
